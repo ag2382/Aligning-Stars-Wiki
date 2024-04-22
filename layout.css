@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/* HOME PAGE NAVIGATION */
+nav {
+	display: table;
+    width: 100%;
+    overflow: auto;
+}
+
+nav > ul {
+	display: table-row;
+}
+
+nav > ul > li {
+	display: table-cell;
+	text-align: center;
+    width: 33%;
+}
+
+nav > ul > li > a {
+	display: block;
+    text-align: center;
+}

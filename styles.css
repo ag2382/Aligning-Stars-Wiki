@@ -1,36 +1,78 @@
-body {
-    background-color: #6868ee;
+@charset "utf-8";
+
+/* WHAT KINDS OF FONTS TO USE?? */
+@font-face {
+    font-family: Futura;
+    src: url('fonts/futura medium bt.ttf');
+    font-weight: normal;
 }
 
-h1 {
+@font-face {
+    font-family: Futura;
+    src: url('fonts/Futura Heavy font.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Futura;
+    src: url('fonts/Futura Bold font.ttf');
+    font-weight: bold;
+}
+
+/* STYLES FOR HOME PAGE */ 
+
+body {
+    background-color: royalblue;
+    font-family: Futura;
+    font-weight: 600;
+}
+
+/* h1 {
     color: #fcd987;
     text-align: center;
     font-size: 70px;
-}
+} */
 
 p#synopsis {
-    font-size: 20px;
-    margin: 40px;
+    color: #fcd987;
+    font-size: 60px;
+    text-align: center;
 }
 
-ul li {
+nav > ul > li {
     font-size: 35px;
     list-style-type: none;
 }
 
+nav > ul > li > a {
+    text-decoration: none;
+    background-color: #fcd987;
+    font-weight: bold;
+}
+
+nav > ul > li > a:hover{
+    background-color: white;
+}
+
 /* SPECIFIC TO CHARACTER PAGES */ 
 
+h1 {
+    border-bottom: 1px solid black;
+}
+
+blockquote {
+    font-size: 30px;
+}
+
+/* Character picture + info */
 div.outer {
     padding: 10px;
     background-color: white;
     border: 2px solid black;
-    width: 600px;
+    width: 500px;
     float: right;
+    margin-right: 30px;
 }
-
-/* td {
-    border: 1px solid black;
-} */
 
 th.branch_head {
     font-size: 25px;
@@ -42,12 +84,40 @@ th.mushroom_head {
     background-color: lightpink;
 }
 
+th.angelina_head {
+    font-size: 25px;
+    background-color: gold;
+}
+
 td.info {
     font-size: 18px;
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+}
+
+p.desc {
+    font-family: Futura;
+    font-size: 20px;
+    word-spacing: 5px;
+    text-align: center;
+    width: 60%;
+    margin-left: 30px;
+}
+
+img.poster {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    border: 3px solid white;
 }
 
 img.char {
-    width: 100%;
-    height: 100%;
-    /* float: right; */
+    display: block;
+    width: 75%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
